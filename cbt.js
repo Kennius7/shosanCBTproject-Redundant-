@@ -118,8 +118,12 @@ const examTimer = document.getElementById("timer1");
 const quizWarnText = document.getElementById("warnText");
 
 /*DOM initialization for displaying the score progress of the exam on the exam page.
-Will be made redundant in the final stage of completing this project.*/
+I have removed the display with the setInterval function. */
 const scoreTextUpload = document.getElementById("scoreText");
+setInterval(() => {
+    scoreTextUpload.style.display = "none";
+}, 1000);
+
 
 //DOM initialization for the final exam score display on the score page.
 const scorePrint = document.getElementById("scorePrintOut");
@@ -666,7 +670,7 @@ nextButton.addEventListener("click", function () {
         examOptionC.style.backgroundImage = "linear-gradient(rgba(2, 2, 2, 0.4), rgb(2, 2, 2))";
         examOptionD.style.backgroundImage = "linear-gradient(rgba(2, 2, 2, 0.4), rgb(2, 2, 2))";
         scoreTextUpload.innerHTML = `Your score is ${examScore}`
-          /*In the line of code below, data type null is assigned to the array item indexed to the current question 'index'.
+        /*In the line of code below, data type null is assigned to the array item indexed to the current question 'index'.
         This will change the value and subtract the score for that question, so that if it is answered correctly
         on another attempt, it will increment the score.*/
         examOptionsDB[currentQuestion] = null;
