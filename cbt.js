@@ -64,8 +64,8 @@ const examData = [
     optionA: "1. Willing to learn everyday",
     optionB: "2. Self encouragement",
     optionC: "3. Patience",
-    optionD: "4. Desiring to code alone and without help",
-    correctAnswer: "4. Desiring to code alone and without help"  
+    optionD: "4. Coding alone without help",
+    correctAnswer: "4. Coding alone without help"  
 },
     {question: "10. Does a programming language called FETCH-XL exist?",
     optionA: "1. Yes",
